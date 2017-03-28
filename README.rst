@@ -29,9 +29,13 @@ The returned result is in JSON::
 each row in the 'data' can be considered one row of pixels of the converted image.
 
 The three major components of building this service are:
+
 **Flask**    The micro web framework
+
 **Pillow**   The Python image library
+
 **Numpy**    The Python numerical library
+
 There are no other dependencies for this service.
 
 Project Files
