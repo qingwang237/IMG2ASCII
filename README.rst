@@ -6,10 +6,10 @@ Overview
 ========
 
 It's a small http serivce built upon Flask, Pillow and Numpy.
+It converts images (png/jpg/bmp) to their ASCII version.
 
-It converts images (png/jpg/bmp) to their ASCII version. To use
-the service, user should post their binary image file to /upload
-URL and the converted image will be returned as JSON.
+To use the service, user should POST their binary image file to '/upload'
+and the converted image will be returned as JSON.
 
 To get a basic feeling of its function, user can go to the project folder
 and run the demo as (change the url if the http service is not running locally)::
