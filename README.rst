@@ -81,4 +81,6 @@ To test the app manually and get a demo of the function, just run::
     python demo.py
 
 or you can use your favorite command line tools such as curl or httpie to test
-/upload when the service is up.
+'/upload' when the service is up. For example::
+
+   curl -i -X POST -H "Content-Type: multipart/form-data" -F "file=@fruits.png" http://localhost:8000/upload
