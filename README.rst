@@ -19,7 +19,7 @@ and run the demo as (change the url if the http service is not running locally):
 The returned result is in JSON::
 
    {
-   "data":[[row1], [row2], ..],
+   "data":[row1, row2, ..],
 
    "message": "Image converted.",
 
