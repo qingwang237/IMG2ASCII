@@ -28,15 +28,20 @@ The returned result is in JSON::
 
 each row in the 'data' can be considered one row of pixels of the converted image.
 
-The three major components of building this service are:
+The three major components for building this service are:
 
-**Flask**    The micro web framework
+**Flask**    The micro web framework, mature and perfect for "micro services"
 
-**Pillow**   The Python image library
+**Pillow**   The Python image library, very mature and the go-to choice for common image processing tasks
 
-**Numpy**    The Python numerical library
+**Numpy**    The Python numerical library, very mature and most powerful
 
-There are no other dependencies for this service.
+There are no other dependencies for this service. However, for testing and demostration,
+the following tools are chosen:
+
+**Flask-testing**    Nice Flask testing extensions and make testing easier
+
+**Requests**  Very mature Python HTTP library and easy to use
 
 Project Files
 =============
