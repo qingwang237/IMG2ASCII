@@ -6,7 +6,7 @@
    2). during production, depending on the hosting location of the service, usually
    cloud services like AWS and GCP will provide statistical performance information
    such as averaging latency, min and max response time, etc.
-   3).Tools such as StatsD to collect the performance metrics by your own.
+   3).Tools such as StatsD can be used to collect the performance metrics by your own.
 
 2. What are some strategies you would employ to make your service more scalable?
    Answers:
@@ -15,7 +15,7 @@
    when scaled. It can also push back the timeline that the service needs to be scaled up/out.
    for example, the img2ascii() can be optimized by using Numba which does JIT of numpy. It can greatly
    reduce the calculation  time. Furthermore, a GPU acceleration can also be used.
-   Other strategies can be used:
+   Other strategies that can be used:
    3). Pay special attention to the scaling issues of database. After all database could be the most
    difficult to scale up. Do good planning ahead. Choose the right database and infrastructure:
    RDBMS/NoSQL? Master-Slave setup? Sharding?
@@ -25,6 +25,6 @@
 3. How would your design change if you needed to store the uploaded images?
    Answers:
    1). a local storage can be added and then have Flask save the file to the local folder.
-   It is straightforward but maybe an issue when the service scales out.
+   It is straightforward but may become an issue when the service scales out.
    2). Use cloud storage as a storage backend. S3, for example. At the same time, a database is needed
-   to store the image file metadata so they can be searched and retrieved easily later on.
+   to store the image files' metadata so they can be searched and retrieved easily later on.
